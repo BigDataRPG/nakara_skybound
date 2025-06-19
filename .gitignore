@@ -1,0 +1,11 @@
+.env
+*__pycache__
+.DS_Store
+.vscode
+.venv
+cmd.txt
+*.pyc
+*.env
+.coverage
+*.json
+visualizations

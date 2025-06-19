@@ -1,0 +1,25 @@
+[project]
+name = "nakara-skybound"
+version = "0.1.0"
+description = ""
+authors = [{ name = "Boyd BigDataRPG", email = "sorratat.s@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "streamlit (>=1.45.1,<2.0.0)",
+    "langgraph (>=0.4.8,<0.5.0)",
+    "openai (>=1.86.0,<2.0.0)",
+    "python-dotenv (>=1.1.0,<2.0.0)",
+    "langchain-openai (>=0.3.24,<0.4.0)",
+    "ipywidgets (>=8.1.7,<9.0.0)",
+    "jupyter (>=1.1.1,<2.0.0)",
+    "notebook (>=7.4.3,<8.0.0)",
+]
+
+[tool.poetry]
+packages = [{ include = "nakara_skybound", from = "src" }]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
