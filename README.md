@@ -5,7 +5,7 @@
 ## Features
 
 - **LLM-Powered NPCs**: NPCs use large language models for dynamic, context-aware dialogue.
-- **Agent Memory**: Both player and NPCs remember past actions, conversations, and world events.
+- **Agent Memory**: Both players and NPCs remember past actions, conversations, and world events.
 - **Strategic Planning**: The game state and NPCs adapt strategies based on memory and context.
 - **MCP/DeepWiki Integration**: NPCs can access external knowledge sources to answer player questions or enhance dialogue.
 - **Emergent Narrative**: Player and NPC strategies combine for a rich, evolving story.
@@ -39,9 +39,13 @@ All interactive lessons and notebooks are in the `workshop/` folder:
     poetry install
     ```
 3. Set your OpenAI API key and any required environment variables in a `.env` file.
-4. Open and run the Jupyter notebooks:
-    - `lesson_05_mcp_llm_game.ipynb`
-    - `lesson_06_mcp_ai_npc.ipynb`
+4. Open and run the Jupyter notebooks in order, starting from the introduction:
+    - `workshop/lesson_01_intro_to_langgraph.ipynb`
+    - `workshop/lesson_02_game_state_management.ipynb`
+    - `workshop/lesson_03_ai_npcs_and_dialogue.ipynb`
+    - `workshop/lesson_04_ai_npc_memory_strategy.ipynb`
+    - `workshop/lesson_05_mcp_llm_game.ipynb`
+    - `workshop/lesson_06_mcp_ai_npc.ipynb`
     - You can launch Jupyter via Poetry:
       ```bash
       poetry run jupyter notebook
@@ -51,6 +55,7 @@ All interactive lessons and notebooks are in the `workshop/` folder:
 
 ```python
 from openai import OpenAI
+
 client = OpenAI()
 resp = client.responses.create(
     model="gpt-4o-mini",
